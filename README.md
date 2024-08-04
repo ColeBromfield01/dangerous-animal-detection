@@ -6,7 +6,10 @@ Our chosen model is YOLO (You Only Look Once). We trained it using a custom
 dataset, which includes images of a handful of different animals and their corresponding labels (Dangerous or
 Not Dangerous).  For the purpose of this experiment, 7 animals were included: buffalo, elephant, rhino, zebra, lion, ostrich, turtle.  The "dangerous" label was conferred upon the buffalo, rhino, lion, and ostrich classes.
 
-## Modifying Model
+# Custom Dataset
+[widlife_detector.zip](https://drive.google.com/uc?export=download&id=1FrPo0bICEH8Xwuyfl2TgBRycyQ6UYUtb)
+
+# Modifying Model
 ### Modifying Animals
 Additional animal image sets can be added externally, using sources such as https://universe.roboflow.com/search?q=lion (modify query as needed).  Add each new animal class (along with index and label) to ```config.yaml``` in ```wildlife_detector.zip```, ensuring that the label index (the first value in the label ```.txt``` file for each instance) is set accordingly.
 
