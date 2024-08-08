@@ -6,6 +6,8 @@ Our chosen model is YOLO (You Only Look Once). Unlike traditional object detecti
 
 ## Modifying Model
 ### Modifying Animals
+The data is contained in ```wildlife_detector.zip``` which can be downloaded after it is loaded into the notebook environment.
+
 Additional animal image sets can be added from external sources such as https://universe.roboflow.com/search?q=lion (modify query as needed).  Add each new animal class (along with index and label) to ```config.yaml``` in ```wildlife_detector.zip```, ensuring that the class index (the first value in the label ```.txt``` file for each instance) is set accordingly.  The images should be added to the ```images``` folder within the correct category directory (```train```, ```test```, or ```valid```), and the label ```.txt``` file to the ```labels``` folder in the same directory.
 
 ### Modifying Labels
